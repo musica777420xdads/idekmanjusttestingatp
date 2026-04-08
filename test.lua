@@ -28,7 +28,7 @@ end
 
 while not lp.Character or not lp.Character:FindFirstChild("HumanoidRootPart") do
     joinpirates()
-    task.wait(0.1)
+    task.wait(0.5)
 end
 
 local MIN_PLAYER_LEVEL = 2300
