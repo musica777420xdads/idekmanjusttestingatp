@@ -26,7 +26,7 @@ local function joinpirates()
     task.wait(0.1)
 end
 
-while not lp.Character or not lp.Character:FindFirstChild("HumanoidRootPart") do
+while not lp.Character or not lp.Character:FindFirstChild("HumanoidRootPart") and Players.LocalPlayer:FindFirstChild("PlayerGui") do
     joinpirates()
     task.wait(0.1)
 end
