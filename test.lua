@@ -395,6 +395,11 @@ local function ServerHop()
     end
 end
 
+task.spawn(function()
+    wait(40)
+    ServerHop()
+end)
+
 local FruitConfigs = {
     ["Dragon"] = {
         ToolName = "Dragon-Dragon",
@@ -797,8 +802,3 @@ while wait(1) do
     PvpEnable()
     v4()
 end
-
-task.spawn(function()
-    task.wait(40)
-    ServerHop()
-end)
